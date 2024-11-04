@@ -26,13 +26,14 @@ const Router=createRouter({
             component:ProductDisplay,
             name:'productdisplay'
         },{
-            path:'releasedownload',
+            path:'/releasedownload',
             component:ReleaseDownload,
             name:'releasedownload'
         },{
-            path:'contributecomp',
+            path:'/contributecomp',
             component:ContributeComp,
             name:'contributecomp'
+            
         }
     ]
 })
