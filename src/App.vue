@@ -1,5 +1,6 @@
 <template>
   <MainMenu></MainMenu>
+  <div>Welcome To FlowD's website</div>
   <TheFooter></TheFooter>
 </template>
 
