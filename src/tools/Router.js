@@ -1,21 +1,24 @@
 ﻿import { createRouter, createWebHashHistory } from "vue-router";
 
-import App from "@/App.vue";
+// import App from "@/App.vue";
 
 
 import NewFeature from "@/components/NewFeature.vue";
 import ProductDisplay from "@/components/ProductDisplay.vue";
 import ReleaseDownload from "@/components/ReleaseDownload.vue";
 import ContributeComp from "@/components/ContributeComp.vue";
+import MainPage from "@/MainPage.vue";
 
 const Router=createRouter({
     history:createWebHashHistory(),
     routes:[
         {
             path:'/index',
-            component:App,
-            name:'index'
+            alias:'/',
+            component:MainPage,
+            name:'index',
         },
+       
         {
             path:'/newfeature',
             component:NewFeature,

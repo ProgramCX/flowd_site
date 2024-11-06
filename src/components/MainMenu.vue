@@ -1,6 +1,6 @@
 ﻿<template>
     <el-menu mode="horizontal" class="menu-bar"
-    default-active="/index"
+    :default-active="currentRouter"
     @select="handleSelect">
     <div class="meta" @click="metaClicked">
         <img src="../assets/logo.png" id="logo"/>
@@ -14,14 +14,21 @@
 </template>
 
 <script>
-    // import {onMounted} from 'vue'
+    import {ref} from 'vue'
     import {  useRouter } from 'vue-router';
     export default {
         name:'MainMenu',
         setup(){
             const router=useRouter();
-            const currentPath = router.path; 
-           
+            let currentRouter=ref("/");
+            router.afterEach((to,from) => {
+                if(to.path=='/'){
+                    router.push("/index");
+                }
+                currentRouter.value=to.path;
+               console.log(to.path);
+               console.log(from.path);
+            })
             function handleSelect(key){
                 router.push(key);
             }
@@ -30,7 +37,7 @@
             }
             return {
                 handleSelect,
-                currentPath,
+                currentRouter,
                 metaClicked
             }
         }
