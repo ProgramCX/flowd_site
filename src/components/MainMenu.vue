@@ -33,7 +33,8 @@
                 router.push(key);
             }
             function metaClicked(){
-                router.push('/index');
+                alert("");
+                router.push('/');
             }
             return {
                 handleSelect,
