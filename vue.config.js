@@ -4,7 +4,7 @@ module.exports = defineConfig({
     config
     .plugin('html')
     .tap(args => {
-    args[0].title = 'FlowD';
+    args[0].title = 'FlowD多线程下载器';
     return args;
     });
     },
