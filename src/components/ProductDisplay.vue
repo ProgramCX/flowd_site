@@ -9,7 +9,7 @@
     <img class="gif" v-show="display[3]" src="../assets/img/test_1.png" />
     </div>
     <div>
-      <el-radio-group v-model="selectedItem" @change="updateDisplay">
+      <el-radio-group v-model="selectedItem" @change="updateDisplay" style="margin-bottom:20px">
         <el-radio-button label="0">精美UI</el-radio-button>
         <el-radio-button label="1">极速下载</el-radio-button>
         <el-radio-button label="2">方便管理</el-radio-button>

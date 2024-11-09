@@ -31,6 +31,7 @@
               <el-button
                 @click="openUrl(currentData.assets[0].browser_download_url)"
                 type="primary"
+                size="small"
               >
                 下载
               </el-button>
@@ -102,6 +103,17 @@ export default {
 };
 </script>
 <style scoped>
+.aside{
+    border-radius: 10px;
+}
+.el-menu-item:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+.el-menu-item:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius:10px;
+}
 .el-menu-item.is-active {
   background-color: #57b2f8 !important;
   color: #fff;
