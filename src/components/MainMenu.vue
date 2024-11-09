@@ -1,5 +1,6 @@
 ﻿<template>
-    <el-menu mode="horizontal" class="menu-bar"
+    <el-header>
+        <el-menu mode="horizontal" class="menu-bar"
     :default-active="currentRouter"
     @select="handleSelect">
     <div class="meta" @click="metaClicked">
@@ -11,6 +12,8 @@
       <el-menu-item index="/releasedownload">发行版本</el-menu-item>
       <el-menu-item index="/contributecomp">贡献</el-menu-item>
     </el-menu>
+    </el-header>
+    
 </template>
 
 <script>

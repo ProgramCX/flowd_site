@@ -91,7 +91,7 @@ export default {
         ElNotification({
           title: "失败",
           message: "刷新数据失败！" + error,
-          type: error,
+          type: "error",
           duration: 3000,
           position: "top-right",
         });

@@ -1,0 +1,232 @@
+﻿[
+    {
+        "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170481547",
+        "assets_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170481547/assets",
+        "upload_url": "https://uploads.github.com/repos/pinsoftstudio/SecondDownloader/releases/170481547/assets{?name,label}",
+        "html_url": "https://github.com/pinsoftstudio/SecondDownloader/releases/tag/V1.0.0.1",
+        "id": 170481547,
+        "author": {
+            "login": "ProgramCX",
+            "id": 124671913,
+            "node_id": "U_kgDOB25XqQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/124671913?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ProgramCX",
+            "html_url": "https://github.com/ProgramCX",
+            "followers_url": "https://api.github.com/users/ProgramCX/followers",
+            "following_url": "https://api.github.com/users/ProgramCX/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ProgramCX/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ProgramCX/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ProgramCX/subscriptions",
+            "organizations_url": "https://api.github.com/users/ProgramCX/orgs",
+            "repos_url": "https://api.github.com/users/ProgramCX/repos",
+            "events_url": "https://api.github.com/users/ProgramCX/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ProgramCX/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "node_id": "RE_kwDOMIfgCs4KKVeL",
+        "tag_name": "V1.0.0.1",
+        "target_commitish": "master",
+        "name": "SecondDownloader_V1.0.0.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2024-08-16T05:47:20Z",
+        "published_at": "2024-08-16T05:53:30Z",
+        "assets": [
+            {
+                "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/assets/186312360",
+                "id": 186312360,
+                "node_id": "RA_kwDOMIfgCs4LGuao",
+                "name": "com.pinsoft.sder.crx",
+                "label": null,
+                "uploader": {
+                    "login": "ProgramCX",
+                    "id": 124671913,
+                    "node_id": "U_kgDOB25XqQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/124671913?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ProgramCX",
+                    "html_url": "https://github.com/ProgramCX",
+                    "followers_url": "https://api.github.com/users/ProgramCX/followers",
+                    "following_url": "https://api.github.com/users/ProgramCX/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ProgramCX/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ProgramCX/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ProgramCX/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ProgramCX/orgs",
+                    "repos_url": "https://api.github.com/users/ProgramCX/repos",
+                    "events_url": "https://api.github.com/users/ProgramCX/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ProgramCX/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "content_type": "application/x-chrome-extension",
+                "state": "uploaded",
+                "size": 140556,
+                "download_count": 1,
+                "created_at": "2024-08-16T06:38:16Z",
+                "updated_at": "2024-08-16T06:38:18Z",
+                "browser_download_url": "https://github.com/pinsoftstudio/SecondDownloader/releases/download/V1.0.0.1/com.pinsoft.sder.crx"
+            },
+            {
+                "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/assets/186312488",
+                "id": 186312488,
+                "node_id": "RA_kwDOMIfgCs4LGuco",
+                "name": "SecondDownloader-windows-msvc-64bit-1.0.0.1.zip",
+                "label": null,
+                "uploader": {
+                    "login": "ProgramCX",
+                    "id": 124671913,
+                    "node_id": "U_kgDOB25XqQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/124671913?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ProgramCX",
+                    "html_url": "https://github.com/ProgramCX",
+                    "followers_url": "https://api.github.com/users/ProgramCX/followers",
+                    "following_url": "https://api.github.com/users/ProgramCX/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ProgramCX/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ProgramCX/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ProgramCX/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ProgramCX/orgs",
+                    "repos_url": "https://api.github.com/users/ProgramCX/repos",
+                    "events_url": "https://api.github.com/users/ProgramCX/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ProgramCX/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "content_type": "application/x-zip-compressed",
+                "state": "uploaded",
+                "size": 138427245,
+                "download_count": 9,
+                "created_at": "2024-08-16T06:39:19Z",
+                "updated_at": "2024-08-16T06:40:10Z",
+                "browser_download_url": "https://github.com/pinsoftstudio/SecondDownloader/releases/download/V1.0.0.1/SecondDownloader-windows-msvc-64bit-1.0.0.1.zip"
+            }
+        ],
+        "tarball_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/tarball/V1.0.0.1",
+        "zipball_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/zipball/V1.0.0.1",
+        "body": "# V.1.0.0.1\r\n- 删除多余工程调试代码。\r\n- 未开始重构\r\n- 你可以使用 https://mirror.ghproxy.com/[要下载Release的地址] 格式下载。或者使用这个：https://s3.tebi.io/test.pinsoftstd.cn/SecondDownloader-windows-msvc-64bit-1.0.0.1.zip 下载\r\n\r\n**Full Changelog**: https://github.com/pinsoftstudio/SecondDownloader/compare/V1.0.0.0...V1.0.0.1",
+        "reactions": {
+            "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170481547/reactions",
+            "total_count": 1,
+            "+1": 1,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 0,
+            "eyes": 0
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    {
+        "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170469697",
+        "assets_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170469697/assets",
+        "upload_url": "https://uploads.github.com/repos/pinsoftstudio/SecondDownloader/releases/170469697/assets{?name,label}",
+        "html_url": "https://github.com/pinsoftstudio/SecondDownloader/releases/tag/V1.0.0.0",
+        "id": 170469697,
+        "author": {
+            "login": "ProgramCX",
+            "id": 124671913,
+            "node_id": "U_kgDOB25XqQ",
+            "avatar_url": "https://avatars.githubusercontent.com/u/124671913?v=4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ProgramCX",
+            "html_url": "https://github.com/ProgramCX",
+            "followers_url": "https://api.github.com/users/ProgramCX/followers",
+            "following_url": "https://api.github.com/users/ProgramCX/following{/other_user}",
+            "gists_url": "https://api.github.com/users/ProgramCX/gists{/gist_id}",
+            "starred_url": "https://api.github.com/users/ProgramCX/starred{/owner}{/repo}",
+            "subscriptions_url": "https://api.github.com/users/ProgramCX/subscriptions",
+            "organizations_url": "https://api.github.com/users/ProgramCX/orgs",
+            "repos_url": "https://api.github.com/users/ProgramCX/repos",
+            "events_url": "https://api.github.com/users/ProgramCX/events{/privacy}",
+            "received_events_url": "https://api.github.com/users/ProgramCX/received_events",
+            "type": "User",
+            "user_view_type": "public",
+            "site_admin": false
+        },
+        "node_id": "RE_kwDOMIfgCs4KKSlB",
+        "tag_name": "V1.0.0.0",
+        "target_commitish": "master",
+        "name": "SecondDownloader_V1.0.0.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2024-08-16T03:29:18Z",
+        "published_at": "2024-08-16T03:43:46Z",
+        "assets": [
+            {
+                "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/assets/186294418",
+                "id": 186294418,
+                "node_id": "RA_kwDOMIfgCs4LGqCS",
+                "name": "SecondDownloader-windows-msvc-64bit-1.0.0.0.zip",
+                "label": null,
+                "uploader": {
+                    "login": "ProgramCX",
+                    "id": 124671913,
+                    "node_id": "U_kgDOB25XqQ",
+                    "avatar_url": "https://avatars.githubusercontent.com/u/124671913?v=4",
+                    "gravatar_id": "",
+                    "url": "https://api.github.com/users/ProgramCX",
+                    "html_url": "https://github.com/ProgramCX",
+                    "followers_url": "https://api.github.com/users/ProgramCX/followers",
+                    "following_url": "https://api.github.com/users/ProgramCX/following{/other_user}",
+                    "gists_url": "https://api.github.com/users/ProgramCX/gists{/gist_id}",
+                    "starred_url": "https://api.github.com/users/ProgramCX/starred{/owner}{/repo}",
+                    "subscriptions_url": "https://api.github.com/users/ProgramCX/subscriptions",
+                    "organizations_url": "https://api.github.com/users/ProgramCX/orgs",
+                    "repos_url": "https://api.github.com/users/ProgramCX/repos",
+                    "events_url": "https://api.github.com/users/ProgramCX/events{/privacy}",
+                    "received_events_url": "https://api.github.com/users/ProgramCX/received_events",
+                    "type": "User",
+                    "user_view_type": "public",
+                    "site_admin": false
+                },
+                "content_type": "application/x-zip-compressed",
+                "state": "uploaded",
+                "size": 138427584,
+                "download_count": 2,
+                "created_at": "2024-08-16T04:10:08Z",
+                "updated_at": "2024-08-16T04:11:01Z",
+                "browser_download_url": "https://github.com/pinsoftstudio/SecondDownloader/releases/download/V1.0.0.0/SecondDownloader-windows-msvc-64bit-1.0.0.0.zip"
+            }
+        ],
+        "tarball_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/tarball/V1.0.0.0",
+        "zipball_url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/zipball/V1.0.0.0",
+        "body": "# V1.0.0.0\r\n- 首次公测。\r\n- 可能有一些抽象的BUG。\r\n- 我们将要在此版本后对项目进行重构，提升代码可读性和可维护性，提升软件的稳定性和效率。\r\n- 暂时只支持Windows，以后计划支持Linux。\r\n- 有建议欢迎在issue中提出。\r\n- 文件比较大，最好使用系统代理或网站代理，可以使用 https://mirror.ghproxy.com/[Release下载地址] 形式下载，提高速度。\r\n- 感谢大家支持！\r\n\r\n**Full Changelog**: https://github.com/pinsoftstudio/SecondDownloader/commits/V1.0.0.0",
+        "discussion_url": "https://github.com/pinsoftstudio/SecondDownloader/discussions/5",
+        "reactions": {
+            "url": "https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases/170469697/reactions",
+            "total_count": 1,
+            "+1": 0,
+            "-1": 0,
+            "laugh": 0,
+            "hooray": 0,
+            "confused": 0,
+            "heart": 0,
+            "rocket": 1,
+            "eyes": 0
+        }
+    }
+]
