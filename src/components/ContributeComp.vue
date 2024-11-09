@@ -110,7 +110,6 @@ export default {
           throw new Error(`Get Commit Data Status: ${response.status}`);
         }
         contributors.value = await response.json();
-        console.log(contributors.value);
         isRefreshing.value = false;
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);

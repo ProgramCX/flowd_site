@@ -42,7 +42,6 @@ export default {
           let numSelectedItem=Number(selectedItem.value);
           numSelectedItem++;
           selectedItem.value=String(numSelectedItem);
-          console.log(selectedItem.value);
         }
         display.value.fill(false);
         display.value[Number(selectedItem.value)] = true;

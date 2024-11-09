@@ -36,7 +36,6 @@
                 router.push(key);
             }
             function metaClicked(){
-                alert("");
                 router.push('/');
             }
             return {
