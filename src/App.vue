@@ -21,6 +21,11 @@ export default {
 </script>
 
 <style>
+body{
+  margin: 0;
+  padding: 0;
+  
+}
 .app-wrapper {
     width: 100%;
     height: 100%;
@@ -41,7 +46,7 @@ export default {
     position: sticky;
     position: -webkit-sticky;
     left: 0px;
-    height: calc(100vh - 50px);  
+    height: calc(100vh - 80px);  
 }
 .el-main {
     width: fit-content;
