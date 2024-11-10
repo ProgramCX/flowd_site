@@ -49,16 +49,23 @@
 <script>
 import { onMounted, ref } from "vue";
 
-import { ElNotification } from "element-plus";
+import { ElLoading, ElNotification } from "element-plus";
+
 export default {
   name: "ContributeComp",
   setup() {
     const commits = ref(0);
     const isRefreshing = ref(false);
     let contributors = ref([]);
-
+    let loading;
+    const option={
+      lock: true,
+      text: '正在加载中...',
+      background: 'white'
+    }
     //Get Commit data
     const GetCommitData = async (isRefresh) => {
+      loading=ElLoading.service(option);
       try {
         //control button loading status
         isRefreshing.value = isRefresh;
@@ -69,6 +76,7 @@ export default {
           throw new Error(`Get Commit Data Status: ${response.status}`);
         }
         const data = await response.json();
+        loading.close();
         if (isRefresh) {
           setTimeout(() => {
             commits.value = data[0].contributions;
@@ -88,6 +96,7 @@ export default {
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
         isRefreshing.value = false;
+        loading.close();
         ElNotification({
           title: "失败",
           message: "刷新数据失败！" + error,

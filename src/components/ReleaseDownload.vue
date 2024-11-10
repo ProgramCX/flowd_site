@@ -1,6 +1,6 @@
 ﻿<template>
   <el-container>
-    <div class="content-wraper">
+    <div class="content-wraper" v-if="currentData">
       <el-aside class="aside-layout">
         <el-menu
           class="aside"
@@ -23,7 +23,7 @@
         <!-- <div class="update-details">
           <p>{{ currentData.body }}</p>
         </div> -->
-        <el-table :data="currentData.assets" class="table">
+        <el-table :data="currentData.assets" class="table" v-if="currentData.length>0">
           <el-table-column prop="name" label="文件名称"></el-table-column>
           <el-table-column prop="download_count" label="下载次数"></el-table-column>
           <el-table-column label="操作">
@@ -40,30 +40,52 @@
         </el-table>
       </el-main>
     </div>
+    <div v-else class="empty">
+      <el-empty>
+      <template v-slot:description>
+        项目正在开发中，暂无发行版本。
+      </template>
+      <el-button @click="showMotrix" plain="true" type="primary">查看Motrix的发行版本</el-button>
+      </el-empty>
+    </div>
+   
   </el-container>
 </template>
 
 <script>
 import { ref, onMounted } from "vue";
-import { ElNotification } from "element-plus";
+import { ElNotification,ElLoading } from "element-plus";
 
 
 export default {
   name: "ReleaseDownload",
  
   setup() {
+    console.log("here");
     const releaseData = ref([]);
     const currentData = ref([]);
+    let loading;
+    let fetchUrl="https://api.github.com/repos/L-Super/FlowD/releases";
+    const option={
+      lock: true,
+      text: '正在加载中...',
+      background: 'white'
 
-    const getReleaseData = async () => {
+    }
+    let getReleaseData = async () => {
+      loading=ElLoading.service(option);
       try {
-        const response = await fetch(
-          "https://api.github.com/repos/agalwood/Motrix/releases"
+        let response = await fetch(
+          fetchUrl
         );
         if (!response.ok) {
           throw new Error(`Get Commit Data Status: ${response.status}`);
         }
-        releaseData.value = await response.json();
+        let data=await response.json();
+        if(data==[]){
+          return;
+        }
+        releaseData.value =data;
         currentData.value=releaseData.value[0];
       } catch (error) {
         console.error("There was a problem with the fetch operation:", error);
@@ -75,6 +97,7 @@ export default {
           position: "top-right",
         });
       }
+      loading.close();
     };
 
     const versionClicked = (index) => {
@@ -88,6 +111,11 @@ export default {
     const openUrl=(url)=>{
         window.open(url,'_blank');
     }
+
+    const showMotrix=()=>{
+        fetchUrl="https://api.github.com/repos/agalwood/Motrix/releases";
+        getReleaseData();
+    }
     onMounted(() => {
       getReleaseData();
     });
@@ -97,7 +125,8 @@ export default {
       currentData,
       versionClicked,
       selectFunc,
-      openUrl
+      openUrl,
+      showMotrix,
     };
   },
 };
@@ -145,7 +174,13 @@ export default {
 }
 .table{
     margin-top: 15px;
-    width: calc(100vw - 140px);
-    
+    width: calc(100vw - 140px);  
+}
+.empty{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>
