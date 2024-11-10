@@ -104,7 +104,6 @@ export default {
           duration: 3000,
           position: "top-right",
         });
-        //https://api.github.com/repos/L-Super/FlowD/contributors
       }
     };
 
@@ -166,7 +165,8 @@ export default {
   cursor: pointer;
   padding: 10px;
   border-radius: 10px;
-  background-image: linear-gradient(120deg, #e0c3fc, #8ec5fc 100%);
+  background-color: rgba(25, 125, 239, 0.6);
+  box-shadow: 4px 3px 14px 3px rgba(100, 100, 111, 0.21);
   margin: 20px 10px;
   min-width: 100px;
 }

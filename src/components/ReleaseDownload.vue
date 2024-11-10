@@ -23,7 +23,7 @@
         <!-- <div class="update-details">
           <p>{{ currentData.body }}</p>
         </div> -->
-        <el-table :data="currentData.assets" class="table" v-if="currentData.length>0">
+        <el-table :data="currentData.assets" class="table">
           <el-table-column prop="name" label="文件名称"></el-table-column>
           <el-table-column prop="download_count" label="下载次数"></el-table-column>
           <el-table-column label="操作">
@@ -45,7 +45,7 @@
       <template v-slot:description>
         项目正在开发中，暂无发行版本。
       </template>
-      <el-button @click="showMotrix" plain="true" type="primary">查看Motrix的发行版本</el-button>
+      <el-button @click="showMotrix" plain="true" type="primary">查看重构之前的SecondDownloader的发行版本</el-button>
       </el-empty>
     </div>
    
@@ -61,7 +61,6 @@ export default {
   name: "ReleaseDownload",
  
   setup() {
-    console.log("here");
     const releaseData = ref([]);
     const currentData = ref([]);
     let loading;
@@ -113,7 +112,7 @@ export default {
     }
 
     const showMotrix=()=>{
-        fetchUrl="https://api.github.com/repos/agalwood/Motrix/releases";
+        fetchUrl="https://api.github.com/repos/pinsoftstudio/SecondDownloader/releases";
         getReleaseData();
     }
     onMounted(() => {
@@ -144,7 +143,7 @@ export default {
     border-bottom-right-radius:10px;
 }
 .el-menu-item.is-active {
-  background-color: #57b2f8 !important;
+  background-color: rgba(29, 143, 237, 0.642) !important;
   color: #fff;
   width: fit-content;
 }
@@ -156,14 +155,14 @@ export default {
   flex-direction: row;
 }
 .update-details {
-    overflow-y: scroll;
-    overflow-x:hidden;
-    word-wrap:break-word;  
-    word-break:break-all;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  word-wrap:break-word;  
+  word-break:break-all;
   border-radius: 10px;
   
   width: calc(100vw - 50px - 80px);
-    height: 30vh;
+  height: 30vh;
   background-color: white;
   box-shadow: 0 3px 18px #00000020;
 }
