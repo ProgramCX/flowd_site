@@ -1,5 +1,5 @@
 ﻿<template>
-  <el-container>
+  <el-container style="min-height: calc(100vh - 45px);">
     <div class="content-wraper" v-if="currentData">
       <el-aside class="aside-layout">
         <el-menu

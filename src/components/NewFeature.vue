@@ -33,6 +33,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: calc(100vh - 45px);
 }
 .title {
   margin: 10px 20px;
