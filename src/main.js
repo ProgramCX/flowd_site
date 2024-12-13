@@ -3,7 +3,7 @@ import App from './App.vue'
 
 //import ElementPlus module
 import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css' 
+import 'element-plus/dist/index.css'
 
 //import ElementPlusIconVue
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
@@ -13,6 +13,8 @@ import Router from './tools/Router'
 
 //import Meta
 import { createMetaManager } from 'vue-meta';
+
+import './registerServiceWorker'
 
 const app= createApp(App)
 
