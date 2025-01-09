@@ -1,7 +1,7 @@
 ﻿<template>
     <el-footer class="footer">
         <p style="font-size:13px">© 2024 程旭 版权所有</p>
-        <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备2024067408号</a>
+        <a href="https://beian.miit.gov.cn/" target="_blank">皖ICP备2024067408号-1</a>
         <span id="regist"><img src="../assets/img/regist.png" height="13px" style="margin-right: 5px;vertical-align:middle"/><a href="https://beian.mps.gov.cn/#/query/webSearch?code=34118102000926" rel="noreferrer" target="_blank">皖公网安备34118102000926</a></span>
     </el-footer>
 </template>
